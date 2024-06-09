@@ -196,7 +196,7 @@ message.
 			</then>
 		</if>
 
-		<property name="gradle.execute.silent" value="true" />
+		<property name="gradle.execute.silent" value="false" />
 
 		<antcall target="clean" />
 

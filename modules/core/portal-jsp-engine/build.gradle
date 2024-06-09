@@ -37,3 +37,11 @@ deployDependencies {
 	exclude "com.liferay.util.taglib-*.jar"
 	exclude "tomcat-servlet-api-*.jar"
 }
+
+normalization {
+	runtimeClasspath {
+		metaInf {
+			ignoreManifest()
+		}
+	}
+}

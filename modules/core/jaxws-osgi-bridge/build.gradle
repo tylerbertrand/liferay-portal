@@ -3,3 +3,11 @@ dependencies {
 	compileOnly group: "javax.xml.ws", name: "jaxws-api", version: "2.3.1"
 	compileOnly group: "org.osgi", name: "osgi.core", version: "6.0.0"
 }
+
+normalization {
+	runtimeClasspath {
+		metaInf {
+			ignoreManifest()
+		}
+	}
+}

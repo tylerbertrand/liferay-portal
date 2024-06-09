@@ -9,3 +9,11 @@ dependencies {
 
 	testImplementation project(":core:petra:petra-process")
 }
+
+normalization {
+	runtimeClasspath {
+		metaInf {
+			ignoreManifest()
+		}
+	}
+}

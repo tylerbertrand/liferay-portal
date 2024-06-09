@@ -3,3 +3,11 @@ dependencies {
 	testIntegrationImplementation project(":core:osgi-service-tracker-collections")
 	testIntegrationImplementation project(":test:arquillian-extension-junit-bridge")
 }
+
+normalization {
+	runtimeClasspath {
+		metaInf {
+			ignoreManifest()
+		}
+	}
+}

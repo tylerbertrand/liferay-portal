@@ -23,3 +23,11 @@ deployDependencies {
 	from configurations.compileOnly
 	rename(/antlr-(.+)\.jar/, "javax.el" + renameSuffix)
 }
+
+normalization {
+	runtimeClasspath {
+		metaInf {
+			ignoreManifest()
+		}
+	}
+}

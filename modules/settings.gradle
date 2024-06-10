@@ -42,6 +42,12 @@ if (Boolean.getBoolean("gradle.develocity.enabled")) {
 	}
 }
 
+buildCache {
+	local {
+		directory = "/Users/tbertrand/projects/forks/liferay/experiment-3/build-cache"
+	}
+}
+
 File privateYarnLockFile = new File(rootDir, "private/yarn.lock")
 
 if (privateYarnLockFile.exists()) {

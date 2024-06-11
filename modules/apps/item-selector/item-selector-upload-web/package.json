@@ -1,0 +1,13 @@
+{
+	"dependencies": {
+		"item-selector-taglib": "*"
+	},
+	"main": "js/ItemSelectorRepositoryEntryBrowser.js",
+	"name": "item-selector-upload-web",
+	"scripts": {
+		"build": "node-scripts build",
+		"checkFormat": "liferay-npm-scripts check",
+		"format": "liferay-npm-scripts fix"
+	},
+	"version": "6.0.21"
+}

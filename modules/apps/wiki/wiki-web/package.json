@@ -1,0 +1,13 @@
+{
+	"dependencies": {
+		"frontend-js-web": "*"
+	},
+	"main": "js/index.js",
+	"name": "wiki-web",
+	"scripts": {
+		"build": "node-scripts build",
+		"checkFormat": "liferay-npm-scripts check",
+		"format": "liferay-npm-scripts fix"
+	},
+	"version": "7.0.112"
+}

@@ -1,0 +1,823 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TranslationAdminSelector is used as a controlled component 1`] = `
+<div
+  class="dropdown-menu dropdown-menu-indicator-start show"
+  id="clay-dropdown-menu-7"
+  role="presentation"
+  style="left: -999px; top: -995px;"
+>
+  <ul
+    class="list-unstyled"
+    role="menu"
+  >
+    <li
+      aria-selected="false"
+      role="presentation"
+    >
+      <button
+        class="dropdown-item"
+        role="menuitem"
+        tabindex="-1"
+      >
+        <span
+          class="autofit-row"
+        >
+          <span
+            class="autofit-col autofit-col-expand"
+          >
+            <div
+              class="autofit-section"
+            >
+              <svg
+                class="lexicon-icon lexicon-icon-en-us inline-item inline-item-before"
+                role="presentation"
+              >
+                <use
+                  href="#en-us"
+                />
+              </svg>
+              <span
+                aria-hidden="true"
+              >
+                en-US
+              </span>
+            </div>
+          </span>
+          <span
+            class="autofit-col"
+          >
+            <span
+              class="sr-only"
+            >
+              x-language-x
+            </span>
+            <div
+              class="autofit-section"
+            >
+              <span
+                aria-hidden="true"
+                class="label label-info"
+              >
+                <span
+                  class="label-item label-item-expand"
+                >
+                  default
+                </span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </button>
+    </li>
+    <li
+      aria-selected="false"
+      role="presentation"
+    >
+      <button
+        class="dropdown-item"
+        role="menuitem"
+        tabindex="-1"
+      >
+        <span
+          class="autofit-row"
+        >
+          <span
+            class="autofit-col autofit-col-expand"
+          >
+            <div
+              class="autofit-section"
+            >
+              <svg
+                class="lexicon-icon lexicon-icon-ar-sa inline-item inline-item-before"
+                role="presentation"
+              >
+                <use
+                  href="#ar-sa"
+                />
+              </svg>
+              <span
+                aria-hidden="true"
+              >
+                ar-SA
+              </span>
+            </div>
+          </span>
+          <span
+            class="autofit-col"
+          >
+            <span
+              class="sr-only"
+            >
+              x-language-x
+            </span>
+            <div
+              class="autofit-section"
+            >
+              <span
+                aria-hidden="true"
+                class="label label-warning"
+              >
+                <span
+                  class="label-item label-item-expand"
+                >
+                  not-translated
+                </span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </button>
+    </li>
+    <li
+      aria-selected="false"
+      role="presentation"
+    >
+      <button
+        class="dropdown-item"
+        role="menuitem"
+        tabindex="-1"
+      >
+        <span
+          class="autofit-row"
+        >
+          <span
+            class="autofit-col autofit-col-expand"
+          >
+            <div
+              class="autofit-section"
+            >
+              <svg
+                class="lexicon-icon lexicon-icon-nl-nl inline-item inline-item-before"
+                role="presentation"
+              >
+                <use
+                  href="#nl-nl"
+                />
+              </svg>
+              <span
+                aria-hidden="true"
+              >
+                nl-NL
+              </span>
+            </div>
+          </span>
+          <span
+            class="autofit-col"
+          >
+            <span
+              class="sr-only"
+            >
+              x-language-x
+            </span>
+            <div
+              class="autofit-section"
+            >
+              <span
+                aria-hidden="true"
+                class="label label-warning"
+              >
+                <span
+                  class="label-item label-item-expand"
+                >
+                  not-translated
+                </span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TranslationAdminSelector renders a dropdown trigger with the selected locale flag icon as content 1`] = `
+<DocumentFragment>
+  <div
+    class="dropdown"
+  >
+    <button
+      aria-controls="clay-dropdown-menu-1"
+      aria-expanded="false"
+      aria-haspopup="true"
+      aria-label="select-a-language.-current-language-x"
+      class="btn-block btn btn-monospaced btn-secondary"
+      title="select-a-language"
+      type="button"
+    >
+      <span
+        class="inline-item"
+      >
+        <svg
+          class="lexicon-icon lexicon-icon-en-us"
+          role="presentation"
+        >
+          <use
+            href="#en-us"
+          />
+        </svg>
+      </span>
+      <span
+        aria-hidden="true"
+        class="btn-section"
+      >
+        en-US
+      </span>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TranslationAdminSelector renders a modal when click on Manage Translations 1`] = `
+<div
+  class="modal"
+>
+  <button
+    class="close"
+  >
+    Close
+  </button>
+</div>
+`;
+
+exports[`TranslationAdminSelector renders an open dropdown with the list of active languages 1`] = `
+<div
+  class="dropdown-menu dropdown-menu-indicator-start show"
+  id="clay-dropdown-menu-2"
+  role="presentation"
+  style="left: -999px; top: -995px;"
+>
+  <ul
+    class="list-unstyled"
+    role="menu"
+  >
+    <li
+      aria-selected="false"
+      role="presentation"
+    >
+      <button
+        class="dropdown-item"
+        role="menuitem"
+        tabindex="-1"
+      >
+        <span
+          class="autofit-row"
+        >
+          <span
+            class="autofit-col autofit-col-expand"
+          >
+            <div
+              class="autofit-section"
+            >
+              <svg
+                class="lexicon-icon lexicon-icon-en-us inline-item inline-item-before"
+                role="presentation"
+              >
+                <use
+                  href="#en-us"
+                />
+              </svg>
+              <span
+                aria-hidden="true"
+              >
+                en-US
+              </span>
+            </div>
+          </span>
+          <span
+            class="autofit-col"
+          >
+            <span
+              class="sr-only"
+            >
+              x-language-x
+            </span>
+            <div
+              class="autofit-section"
+            >
+              <span
+                aria-hidden="true"
+                class="label label-info"
+              >
+                <span
+                  class="label-item label-item-expand"
+                >
+                  default
+                </span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </button>
+    </li>
+    <li
+      aria-selected="false"
+      role="presentation"
+    >
+      <button
+        class="dropdown-item"
+        role="menuitem"
+        tabindex="-1"
+      >
+        <span
+          class="autofit-row"
+        >
+          <span
+            class="autofit-col autofit-col-expand"
+          >
+            <div
+              class="autofit-section"
+            >
+              <svg
+                class="lexicon-icon lexicon-icon-ca-es inline-item inline-item-before"
+                role="presentation"
+              >
+                <use
+                  href="#ca-es"
+                />
+              </svg>
+              <span
+                aria-hidden="true"
+              >
+                ca-ES
+              </span>
+            </div>
+          </span>
+          <span
+            class="autofit-col"
+          >
+            <span
+              class="sr-only"
+            >
+              x-language-x
+            </span>
+            <div
+              class="autofit-section"
+            >
+              <span
+                aria-hidden="true"
+                class="label label-warning"
+              >
+                <span
+                  class="label-item label-item-expand"
+                >
+                  not-translated
+                </span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TranslationAdminSelector renders an open dropdown with the list of active languages and manage translation option 1`] = `
+<div
+  class="dropdown-menu dropdown-menu-indicator-start show"
+  id="clay-dropdown-menu-3"
+  role="presentation"
+  style="left: -999px; top: -995px;"
+>
+  <ul
+    class="list-unstyled"
+    role="menu"
+  >
+    <li
+      aria-selected="false"
+      role="presentation"
+    >
+      <button
+        class="dropdown-item"
+        role="menuitem"
+        tabindex="-1"
+      >
+        <span
+          class="autofit-row"
+        >
+          <span
+            class="autofit-col autofit-col-expand"
+          >
+            <div
+              class="autofit-section"
+            >
+              <svg
+                class="lexicon-icon lexicon-icon-en-us inline-item inline-item-before"
+                role="presentation"
+              >
+                <use
+                  href="#en-us"
+                />
+              </svg>
+              <span
+                aria-hidden="true"
+              >
+                en-US
+              </span>
+            </div>
+          </span>
+          <span
+            class="autofit-col"
+          >
+            <span
+              class="sr-only"
+            >
+              x-language-x
+            </span>
+            <div
+              class="autofit-section"
+            >
+              <span
+                aria-hidden="true"
+                class="label label-info"
+              >
+                <span
+                  class="label-item label-item-expand"
+                >
+                  default
+                </span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </button>
+    </li>
+    <li
+      aria-selected="false"
+      role="presentation"
+    >
+      <button
+        class="dropdown-item"
+        role="menuitem"
+        tabindex="-1"
+      >
+        <span
+          class="autofit-row"
+        >
+          <span
+            class="autofit-col autofit-col-expand"
+          >
+            <div
+              class="autofit-section"
+            >
+              <svg
+                class="lexicon-icon lexicon-icon-ca-es inline-item inline-item-before"
+                role="presentation"
+              >
+                <use
+                  href="#ca-es"
+                />
+              </svg>
+              <span
+                aria-hidden="true"
+              >
+                ca-ES
+              </span>
+            </div>
+          </span>
+          <span
+            class="autofit-col"
+          >
+            <span
+              class="sr-only"
+            >
+              x-language-x
+            </span>
+            <div
+              class="autofit-section"
+            >
+              <span
+                aria-hidden="true"
+                class="label label-warning"
+              >
+                <span
+                  class="label-item label-item-expand"
+                >
+                  not-translated
+                </span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </button>
+    </li>
+    <li
+      class="dropdown-divider"
+      role="separator"
+    />
+    <li
+      role="presentation"
+    >
+      <button
+        class="dropdown-item"
+        data-testid="translation-modal-trigger"
+        role="menuitem"
+        tabindex="-1"
+      >
+        <span
+          class="autofit-row"
+        >
+          <span
+            class="autofit-col autofit-col-expand"
+          >
+            <div
+              class="autofit-section"
+            >
+              <svg
+                class="lexicon-icon lexicon-icon-automatic-translate inline-item inline-item-before"
+                role="presentation"
+              >
+                <use
+                  href="#automatic-translate"
+                />
+              </svg>
+              manage-translations
+            </div>
+          </span>
+        </span>
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TranslationAdminSelector renders an open dropdown with updated active locales when added from the Manage Translations Modal 1`] = `
+<div
+  aria-hidden="true"
+  class="dropdown-menu dropdown-menu-indicator-start"
+  id="clay-dropdown-menu-5"
+  role="presentation"
+  style="left: -999px; top: -995px;"
+>
+  <ul
+    class="list-unstyled"
+    role="menu"
+  >
+    <li
+      aria-selected="true"
+      role="presentation"
+    >
+      <button
+        class="dropdown-item active"
+        role="menuitem"
+        tabindex="-1"
+      >
+        <span
+          class="dropdown-item-indicator-start"
+        >
+          <svg
+            class="lexicon-icon lexicon-icon-check-small"
+            role="presentation"
+          >
+            <use
+              href="#check-small"
+            />
+          </svg>
+        </span>
+        <span
+          class="autofit-row"
+        >
+          <span
+            class="autofit-col autofit-col-expand"
+          >
+            <div
+              class="autofit-section"
+            >
+              <svg
+                class="lexicon-icon lexicon-icon-en-us inline-item inline-item-before"
+                role="presentation"
+              >
+                <use
+                  href="#en-us"
+                />
+              </svg>
+              <span
+                aria-hidden="true"
+              >
+                en-US
+              </span>
+            </div>
+          </span>
+          <span
+            class="autofit-col"
+          >
+            <span
+              class="sr-only"
+            >
+              x-language-x
+            </span>
+            <div
+              class="autofit-section"
+            >
+              <span
+                aria-hidden="true"
+                class="label label-info"
+              >
+                <span
+                  class="label-item label-item-expand"
+                >
+                  default
+                </span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </button>
+    </li>
+    <li
+      aria-selected="false"
+      role="presentation"
+    >
+      <button
+        class="dropdown-item"
+        role="menuitem"
+        tabindex="-1"
+      >
+        <span
+          class="autofit-row"
+        >
+          <span
+            class="autofit-col autofit-col-expand"
+          >
+            <div
+              class="autofit-section"
+            >
+              <svg
+                class="lexicon-icon lexicon-icon-ar-sa inline-item inline-item-before"
+                role="presentation"
+              >
+                <use
+                  href="#ar-sa"
+                />
+              </svg>
+              <span
+                aria-hidden="true"
+              >
+                ar-SA
+              </span>
+            </div>
+          </span>
+          <span
+            class="autofit-col"
+          >
+            <span
+              class="sr-only"
+            >
+              x-language-x
+            </span>
+            <div
+              class="autofit-section"
+            >
+              <span
+                aria-hidden="true"
+                class="label label-warning"
+              >
+                <span
+                  class="label-item label-item-expand"
+                >
+                  not-translated
+                </span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </button>
+    </li>
+    <li
+      aria-selected="false"
+      role="presentation"
+    >
+      <button
+        class="dropdown-item"
+        role="menuitem"
+        tabindex="-1"
+      >
+        <span
+          class="autofit-row"
+        >
+          <span
+            class="autofit-col autofit-col-expand"
+          >
+            <div
+              class="autofit-section"
+            >
+              <svg
+                class="lexicon-icon lexicon-icon-nl-nl inline-item inline-item-before"
+                role="presentation"
+              >
+                <use
+                  href="#nl-nl"
+                />
+              </svg>
+              <span
+                aria-hidden="true"
+              >
+                nl-NL
+              </span>
+            </div>
+          </span>
+          <span
+            class="autofit-col"
+          >
+            <span
+              class="sr-only"
+            >
+              x-language-x
+            </span>
+            <div
+              class="autofit-section"
+            >
+              <span
+                aria-hidden="true"
+                class="label label-warning"
+              >
+                <span
+                  class="label-item label-item-expand"
+                >
+                  not-translated
+                </span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </button>
+    </li>
+    <li
+      class="dropdown-divider"
+      role="separator"
+    />
+    <li
+      role="presentation"
+    >
+      <button
+        class="dropdown-item"
+        data-testid="translation-modal-trigger"
+        role="menuitem"
+        tabindex="-1"
+      >
+        <span
+          class="autofit-row"
+        >
+          <span
+            class="autofit-col autofit-col-expand"
+          >
+            <div
+              class="autofit-section"
+            >
+              <svg
+                class="lexicon-icon lexicon-icon-automatic-translate inline-item inline-item-before"
+                role="presentation"
+              >
+                <use
+                  href="#automatic-translate"
+                />
+              </svg>
+              manage-translations
+            </div>
+          </span>
+        </span>
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TranslationAdminSelector selects the default locale if the current selected one is removed from the active locales list 1`] = `
+<DocumentFragment>
+  <div
+    class="dropdown"
+  >
+    <button
+      aria-controls="clay-dropdown-menu-8"
+      aria-expanded="true"
+      aria-haspopup="true"
+      aria-label="select-a-language.-current-language-x"
+      class="btn-block btn btn-monospaced btn-secondary"
+      style=""
+      title="select-a-language"
+      type="button"
+    >
+      <span
+        class="inline-item"
+      >
+        <svg
+          class="lexicon-icon lexicon-icon-en-us"
+          role="presentation"
+        >
+          <use
+            href="#en-us"
+          />
+        </svg>
+      </span>
+      <span
+        aria-hidden="true"
+        class="btn-section"
+      >
+        en-US
+      </span>
+    </button>
+  </div>
+</DocumentFragment>
+`;

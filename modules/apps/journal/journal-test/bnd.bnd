@@ -1,0 +1,14 @@
+Bundle-Name: Liferay Journal Test
+Bundle-SymbolicName: com.liferay.journal.test
+Bundle-Version: 1.0.0
+Import-Package:\
+	!com.fasterxml.jackson.*,\
+	\
+	!com.liferay.util.xml,\
+	\
+	!org.junit.experimental.theories,\
+	\
+	javax.servlet;version='[2.3.0,4.0.0)',\
+	\
+	*
+-includeresource: @jsonassert-[0-9.]*.jar

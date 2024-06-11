@@ -32,6 +32,8 @@ if (Boolean.getBoolean("gradle.develocity.enabled")) {
 				tag System.getProperty("gradle.develocity.tag")
 			}
 			value "Heap size", "16G"
+			tag "16G"
+      tag "No Survivor or NewSpace config"
 			termsOfUseAgree = "yes"
 			termsOfUseUrl = "https://gradle.com/terms-of-service"
 

@@ -31,7 +31,7 @@ if (Boolean.getBoolean("gradle.develocity.enabled")) {
 			if (System.getProperty("gradle.develocity.tag")) {
 				tag System.getProperty("gradle.develocity.tag")
 			}
-
+			value "Heap size", "32G"
 			termsOfUseAgree = "yes"
 			termsOfUseUrl = "https://gradle.com/terms-of-service"
 

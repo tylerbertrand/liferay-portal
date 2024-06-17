@@ -182,6 +182,7 @@ public class JspCPlugin implements Plugin<Project> {
 			compileJSPTask.getProject(), JavaPlugin.COMPILE_JAVA_TASK_NAME);
 
 		compileJSPTask.dependsOn(javaCompile);
+		compileJSPTask.mustRunAfter(JavaPlugin.PROCESS_RESOURCES_TASK_NAME);
 
 		DirectoryProperty directoryProperty =
 			compileJSPTask.getDestinationDirectory();

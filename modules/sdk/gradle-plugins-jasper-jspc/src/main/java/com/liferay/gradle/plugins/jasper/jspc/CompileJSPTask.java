@@ -30,6 +30,7 @@ import org.gradle.api.tasks.PathSensitive;
 import org.gradle.api.tasks.PathSensitivity;
 import org.gradle.api.tasks.SkipWhenEmpty;
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.work.NormalizeLineEndings;
 
 /**
  * @author Andrea Di Giorgi
@@ -60,6 +61,7 @@ public class CompileJSPTask extends DefaultTask {
 	}
 
 	@Classpath
+	@NormalizeLineEndings
 	public FileCollection getJspCClasspath() {
 		return _jspCClasspath;
 	}

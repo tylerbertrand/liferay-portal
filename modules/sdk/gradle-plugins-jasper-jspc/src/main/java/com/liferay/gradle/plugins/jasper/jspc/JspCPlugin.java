@@ -26,7 +26,6 @@ import org.gradle.api.plugins.JavaPlugin;
 import org.gradle.api.plugins.PluginContainer;
 import org.gradle.api.plugins.WarPlugin;
 import org.gradle.api.plugins.WarPluginConvention;
-import org.gradle.api.tasks.Copy;
 import org.gradle.api.tasks.SourceSet;
 import org.gradle.api.tasks.bundling.War;
 import org.gradle.api.tasks.compile.JavaCompile;
@@ -89,30 +88,18 @@ public class JspCPlugin implements Plugin<Project> {
 
 		DependencyHandler dependencyHandler = project.getDependencies();
 
-		JavaCompile javaCompile = (JavaCompile)GradleUtil.getTask(
-			project, JavaPlugin.COMPILE_JAVA_TASK_NAME);
+		SourceSet sourceSet = GradleUtil.getSourceSet(
+			project, SourceSet.MAIN_SOURCE_SET_NAME);
 
 		ConfigurableFileCollection configurableFileCollection = project.files(
-			javaCompile);
+			sourceSet.getOutput());
 
-		configurableFileCollection.builtBy(javaCompile);
-
-		dependencyHandler.add(CONFIGURATION_NAME, configurableFileCollection);
-
-		Copy copy = (Copy)GradleUtil.getTask(
-			project, JavaPlugin.PROCESS_RESOURCES_TASK_NAME);
-
-		configurableFileCollection = project.files(copy);
-
-		configurableFileCollection.builtBy(copy);
+		configurableFileCollection.builtBy(sourceSet.getOutput());
 
 		dependencyHandler.add(CONFIGURATION_NAME, configurableFileCollection);
 
 		Configuration configuration = GradleUtil.getConfiguration(
 			project, CONFIGURATION_NAME);
-
-		SourceSet sourceSet = GradleUtil.getSourceSet(
-			project, SourceSet.MAIN_SOURCE_SET_NAME);
 
 		Configuration compileClasspathConfiguration =
 			GradleUtil.getConfiguration(

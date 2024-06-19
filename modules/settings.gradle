@@ -48,7 +48,7 @@ if (Boolean.getBoolean("gradle.develocity.enabled")) {
 
 buildCache {
 	local {
-		directory = file("/Users/tbertrand/scripts/gradle-enterprise-gradle-build-validation/liferay-portal-local-build-cache")
+		directory = file("/Users/tbertrand/projects/forks/liferay/experiment-3-take-2/local-build-cache")
 	}
 }
 

@@ -70,15 +70,19 @@ public class Address implements Serializable {
 
 	@JsonIgnore
 	public void setCity(UnsafeSupplier<String, Exception> cityUnsafeSupplier) {
-		_citySupplier = () -> {
-			try {
-				return cityUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_citySupplier = new Supplier<String>() {
+
+			@Override
+			public String get() {
+				try {
+					return cityUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -112,15 +116,18 @@ public class Address implements Serializable {
 	public void setCountry(
 		UnsafeSupplier<String, Exception> countryUnsafeSupplier) {
 
-		_countrySupplier = () -> {
-			try {
-				return countryUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_countrySupplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return countryUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -153,15 +160,18 @@ public class Address implements Serializable {
 	public void setCountryISOCode(
 		UnsafeSupplier<String, Exception> countryISOCodeUnsafeSupplier) {
 
-		_countryISOCodeSupplier = () -> {
-			try {
-				return countryISOCodeUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_countryISOCodeSupplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return countryISOCodeUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -195,15 +205,18 @@ public class Address implements Serializable {
 	public void setDescription(
 		UnsafeSupplier<String, Exception> descriptionUnsafeSupplier) {
 
-		_descriptionSupplier = () -> {
-			try {
-				return descriptionUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_descriptionSupplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return descriptionUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -236,15 +249,18 @@ public class Address implements Serializable {
 	public void setExternalReferenceCode(
 		UnsafeSupplier<String, Exception> externalReferenceCodeUnsafeSupplier) {
 
-		_externalReferenceCodeSupplier = () -> {
-			try {
-				return externalReferenceCodeUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_externalReferenceCodeSupplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return externalReferenceCodeUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -275,15 +291,18 @@ public class Address implements Serializable {
 
 	@JsonIgnore
 	public void setId(UnsafeSupplier<Long, Exception> idUnsafeSupplier) {
-		_idSupplier = () -> {
-			try {
-				return idUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_idSupplier = new Supplier<Long>() {
+			@Override
+			public Long get() {
+				try {
+					return idUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -316,15 +335,18 @@ public class Address implements Serializable {
 	public void setLatitude(
 		UnsafeSupplier<Double, Exception> latitudeUnsafeSupplier) {
 
-		_latitudeSupplier = () -> {
-			try {
-				return latitudeUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_latitudeSupplier = new Supplier<Double>() {
+			@Override
+			public Double get() {
+				try {
+					return latitudeUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -357,15 +379,18 @@ public class Address implements Serializable {
 	public void setLongitude(
 		UnsafeSupplier<Double, Exception> longitudeUnsafeSupplier) {
 
-		_longitudeSupplier = () -> {
-			try {
-				return longitudeUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_longitudeSupplier = new Supplier<Double>() {
+			@Override
+			public Double get() {
+				try {
+					return longitudeUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -396,15 +421,18 @@ public class Address implements Serializable {
 
 	@JsonIgnore
 	public void setName(UnsafeSupplier<String, Exception> nameUnsafeSupplier) {
-		_nameSupplier = () -> {
-			try {
-				return nameUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_nameSupplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return nameUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -438,15 +466,18 @@ public class Address implements Serializable {
 	public void setPhoneNumber(
 		UnsafeSupplier<String, Exception> phoneNumberUnsafeSupplier) {
 
-		_phoneNumberSupplier = () -> {
-			try {
-				return phoneNumberUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_phoneNumberSupplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return phoneNumberUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -479,15 +510,18 @@ public class Address implements Serializable {
 	public void setRegion(
 		UnsafeSupplier<String, Exception> regionUnsafeSupplier) {
 
-		_regionSupplier = () -> {
-			try {
-				return regionUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_regionSupplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return regionUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -520,15 +554,18 @@ public class Address implements Serializable {
 	public void setRegionISOCode(
 		UnsafeSupplier<String, Exception> regionISOCodeUnsafeSupplier) {
 
-		_regionISOCodeSupplier = () -> {
-			try {
-				return regionISOCodeUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_regionISOCodeSupplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return regionISOCodeUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -561,15 +598,18 @@ public class Address implements Serializable {
 	public void setStreet1(
 		UnsafeSupplier<String, Exception> street1UnsafeSupplier) {
 
-		_street1Supplier = () -> {
-			try {
-				return street1UnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_street1Supplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return street1UnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -603,15 +643,18 @@ public class Address implements Serializable {
 	public void setStreet2(
 		UnsafeSupplier<String, Exception> street2UnsafeSupplier) {
 
-		_street2Supplier = () -> {
-			try {
-				return street2UnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_street2Supplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return street2UnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -644,15 +687,18 @@ public class Address implements Serializable {
 	public void setStreet3(
 		UnsafeSupplier<String, Exception> street3UnsafeSupplier) {
 
-		_street3Supplier = () -> {
-			try {
-				return street3UnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_street3Supplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return street3UnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -683,15 +729,18 @@ public class Address implements Serializable {
 
 	@JsonIgnore
 	public void setType(UnsafeSupplier<String, Exception> typeUnsafeSupplier) {
-		_typeSupplier = () -> {
-			try {
-				return typeUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_typeSupplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return typeUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -724,15 +773,18 @@ public class Address implements Serializable {
 	public void setTypeId(
 		UnsafeSupplier<Integer, Exception> typeIdUnsafeSupplier) {
 
-		_typeIdSupplier = () -> {
-			try {
-				return typeIdUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_typeIdSupplier = new Supplier<Integer>() {
+			@Override
+			public Integer get() {
+				try {
+					return typeIdUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -765,15 +817,18 @@ public class Address implements Serializable {
 	public void setVatNumber(
 		UnsafeSupplier<String, Exception> vatNumberUnsafeSupplier) {
 
-		_vatNumberSupplier = () -> {
-			try {
-				return vatNumberUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_vatNumberSupplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return vatNumberUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
@@ -804,15 +859,18 @@ public class Address implements Serializable {
 
 	@JsonIgnore
 	public void setZip(UnsafeSupplier<String, Exception> zipUnsafeSupplier) {
-		_zipSupplier = () -> {
-			try {
-				return zipUnsafeSupplier.get();
-			}
-			catch (RuntimeException runtimeException) {
-				throw runtimeException;
-			}
-			catch (Exception exception) {
-				throw new RuntimeException(exception);
+		_zipSupplier = new Supplier<String>() {
+			@Override
+			public String get() {
+				try {
+					return zipUnsafeSupplier.get();
+				}
+				catch (RuntimeException runtimeException) {
+					throw runtimeException;
+				}
+				catch (Exception exception) {
+					throw new RuntimeException(exception);
+				}
 			}
 		};
 	}
